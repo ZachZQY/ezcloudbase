@@ -1,0 +1,37 @@
+{
+  "name": "ezcloudbase",
+  "type": "module",
+  "version": "1.0.1",
+  "description": "A simple cloudbase npm package",
+  "main": "./dist/client/index.cjs",
+  "module": "./dist/client/index.mjs",
+  "types": "./dist/client/types/client/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "cloudbase",
+    "npm",
+    "typescript"
+  ],
+  "author": "Zach",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^22.0.0",
+    "rollup": "^4.19.1",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "tslib": "^2.6.3"
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "forceConsistentCasingInFileNames":true,
+      "target": "es5",
+      "module": "es6",
+      //"moduleResolution": "node",//已经默认为node
+      "declaration": true,
+      "declarationDir": "./dist/types",
+      "outDir": "./dist/",
+      "strict": true,
+      //"esModuleInterop": true,//已经默认为true
+      "sourceMap": true,
+    },
+  }
