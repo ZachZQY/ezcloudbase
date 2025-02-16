@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "lib": ["ES2017", "dom"],
+    "declarationDir": "./dist/types",
+    "removeComments": false
+  },
+  "include": ["src/client/**/*", "src/types/client.ts", "src/types/common.ts", "src/types/actionflow.ts"]
+}

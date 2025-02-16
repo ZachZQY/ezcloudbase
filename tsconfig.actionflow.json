@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": false,
+    "lib": ["ES2017"]
+  },
+  "include": ["src/actionflow/**/*", "src/types/actionflow.ts", "src/types/common.ts"]
+} 

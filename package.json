@@ -1,0 +1,53 @@
+{
+  "name": "ezcloudbase",
+  "version": "2.2.8",
+  "description": "函子（原ZION）云开发相关的工具库，包括客户端、服务端、云函数等",
+  "main": "./dist/ezcloudbase.cjs",
+  "module": "./dist/ezcloudbase.mjs",
+  "types": "./dist/types/client/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/client/index.d.ts",
+      "import": "./dist/ezcloudbase.mjs",
+      "require": "./dist/ezcloudbase.cjs",
+      "default": "./dist/ezcloudbase.umd.js"
+    }
+  },
+  "browser": "./dist/ezcloudbase.umd.js",
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
+    "dev": "rollup -c -w --bundleConfigAsCjs",
+    "merge": "api-extractor run --local --verbose"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "ezcloudbase",
+    "云开发框架",
+    "ezcloud",
+    "函子（原Zion）",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZachZQY/ezcloudbase.git"
+  },
+  "author": "ZachZQY <zhangquanyinhahaha@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.47.11",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^22.0.0",
+    "rollup": "^4.19.1",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "tslib": "^2.7.0"
+  }
+}

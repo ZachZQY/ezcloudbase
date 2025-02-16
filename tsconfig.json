@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "target": "es6",
+    "module": "es6",
+    "strict": true,
+    "sourceMap": true,
+    "lib": ["ES2017"]
+  }
+}

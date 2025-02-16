@@ -1,0 +1,9 @@
+/node_modules
+/src
+package-lock.json
+api-extractor.json
+rollup.config.js
+tsconfig.json
+.gitignore
+.hintrc
+" "
